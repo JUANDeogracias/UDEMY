@@ -50,13 +50,15 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", genero=" + genero +
-                ", edad=" + edad +
-                ", direccion='" + direccion + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("Persona{");
+        sb.append("nombre='").append(nombre).append('\'');
+        sb.append(", genero='").append(genero).append('\'');
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion de memoria='").append(super.toString()).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
