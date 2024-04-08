@@ -8,6 +8,12 @@ public class Main {
         * de la clase.*/
         Persona per1 = new Persona("Juan");
         Persona per2 = new Persona("Pedro");
-        System.out.println(Persona.getContadorPersonas());
+
+        /*Dentro de un metodo estatico no se puede utilizar la palabra this*/
+        imprimir(per1);
+        imprimir(per2);
+    }
+    public static void imprimir(Persona p){
+        System.out.println(p);
     }
 }

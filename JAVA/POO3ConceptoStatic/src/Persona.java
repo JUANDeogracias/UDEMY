@@ -35,4 +35,8 @@ public class Persona {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String toString(){
+        return "DATOS \nPersona: \n- id: " + this.id + "\n- " + this.name;
+    }
 }
