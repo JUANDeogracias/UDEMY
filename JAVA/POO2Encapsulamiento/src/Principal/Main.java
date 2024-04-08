@@ -22,6 +22,9 @@ public class Main {
         //Para acceder tenemos que hacer lo siguiente
         Persona persona = new Persona(name, salary, eliminated);
 
-        persona.MostrarInfo();
+        //El metodo toString es muy util para imprimir en pantalla una cadena de texto
+        //ademas si utilizamos println y solo llamamos a el objeto se va a imprimir
+        //el metodo toString
+        System.out.println(persona);
     }
 }
