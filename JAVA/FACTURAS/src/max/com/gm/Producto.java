@@ -1,4 +1,4 @@
-package mx.com.gm;
+package max.com.gm;
 
 public class Producto {
     /*Hacemos que idProducto sea de tipo final para que solo pueda ser modificada
@@ -38,7 +38,8 @@ public class Producto {
         this.precio = precio;
     }
 
-    @Override
+    @Override //Es recomendable en este caso indicar @Override para indicarselo a el
+              //compilador
     public String toString() {
         final StringBuilder sb = new StringBuilder("Producto{");
         sb.append("idProducto=").append(idProducto);
