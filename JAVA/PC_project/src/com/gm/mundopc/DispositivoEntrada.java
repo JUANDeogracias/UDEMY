@@ -29,8 +29,8 @@ public class DispositivoEntrada {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("DispositivoEntrada{");
-        sb.append("tipoEntrada='").append(tipoEntrada).append('\'');
-        sb.append(", marca='").append(marca).append('\'');
+        sb.append("tipoEntrada= '").append(tipoEntrada).append('\'');
+        sb.append(", marca= '").append(marca).append('\'');
         sb.append('}');
         return sb.toString();
     }
