@@ -1,5 +1,4 @@
 package max.com.gm;
-
 public class Orden {
     private int idOrden;
     private Producto productos[];

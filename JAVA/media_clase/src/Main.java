@@ -23,10 +23,12 @@ public class Main {
         int sumatorio = 0;
         int contador = 0;
 
+        final int numeroSalida = 0;
         System.out.println("--INTRODUCE UN NUMERO EN PANTALLA--");
+        int numero;
+
         while(!error) {
-            int numero = scanner.nextInt();
-            if(numero != 0) {
+            if((numero = scanner.nextInt()) != numeroSalida) {
                 System.out.println("Perfecto procesando el datos correctamente. " +
                         "Ingrese uno nuevo");
                 sumatorio += numero;
@@ -38,8 +40,9 @@ public class Main {
             contador++;
         }
 
-        float resultado = sumatorio / (contador-1);
-        System.out.println("--La media da como resultado " + resultado +"--");
+        float resultado = (float) sumatorio / (--contador);
+        float total = resultado;
+        System.out.println("--La media da como resultado " + resultado + "--");
 
         scanner.close();
     }

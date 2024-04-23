@@ -7,7 +7,7 @@ public class Empleado extends Persona{
     private double sueldo;
     private static int contadorEmpleado;
 
-    public Empleado() {
+    private Empleado() {
         this.idEmpleado = ++contadorEmpleado;
     }
 
